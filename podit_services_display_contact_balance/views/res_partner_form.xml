@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<data>
+
+		<record id="view_partner_tree_inherit_display_balance" model="ir.ui.view">
+			<field name="name">res.partner.form.inherit_display_balance</field>
+			<field name="model">res.partner</field>
+			<field name="inherit_id" ref="base.view_partner_tree"/>
+			<field name="arch" type="xml">
+				<field name="display_name" position="after">
+				    	<field name="currency_id" invisible="1"/>
+				</field>	
+			</field>
+		</record>
+	</data>
+</odoo>
